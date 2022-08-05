@@ -5,7 +5,7 @@ defmodule RclexMini.MixProject do
     [
       app: :rclex_mini,
       version: "0.1.0",
-      elixir: "~> 1.13",
+      elixir: "~> 1.12",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
       compilers: [:elixir_make] ++ Mix.compilers(),

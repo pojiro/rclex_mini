@@ -7,6 +7,10 @@ defmodule RclexMini.Nif do
     :erlang.load_nif(to_charlist(nif_binary), 0)
   end
 
+  def create_node() do
+    :erlang.nif_error(:nif_not_loaded)
+  end
+
   def hello() do
     :erlang.nif_error(:nif_not_loaded)
   end
